@@ -3,15 +3,9 @@ Investigacion sobre como usar Pytorch y Label Studio
 
 # Como levantarlo:
 1. Nos posicionamos en una ruta deseada con el CMD y hacemos: git clone https://github.com/AgustinSaturni/DeteccionOjosPerros
-2. Con el comando: cd DeteccionOjosPerros ingresamos a la carpeta.
+2. Con el comando: cd DeteccionOjosPerros ingresamos a la carpeta
 3. Creamos el entorno virtual con el comando: python -m venv .venv         
-4. Levantamos el entorno virtual con:
-source .venv/bin/activate     # levantar entorno en Linux/Mac
-
-o
-
-.venv\Scripts\activate        # levantar entorno en Windows
-
+4. Levantamos el entorno virtual con: source .venv/bin/activate    (entorno en Linux/Mac) o .venv\Scripts\activate (entorno en Windows)
 6. Instalamos las dependencias con el comando: pip install -r requirements.txt # instalar requerimientos
 7. Corremos el codigo con el comando: python dataset.py
 
