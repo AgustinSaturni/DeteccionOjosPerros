@@ -145,7 +145,7 @@ Muestra la imagen anotada con los puntos clave usando `matplotlib`.
 ## 📁 Estructura esperada del dataset
 
 ```
-Perritos/
+DeteccionOjosPerros/
 ├── images/
 │   ├── perro1.jpg
 │   └── perro2.jpg
