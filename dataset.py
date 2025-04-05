@@ -94,7 +94,7 @@ transform = ResizeGrayNormalize(output_size=(256, 256))
 dataset = KeypointDogDataset(images_path, labels_path, transform=transform)
 
 # Visualizar la primera imagen con los puntos
-sample = dataset[1]
+sample = dataset[9]
 image = sample["image"].squeeze().numpy()  # Eliminar canal adicional
 keypoints = sample["keypoints"]
 
