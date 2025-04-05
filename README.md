@@ -6,11 +6,15 @@ Investigacion sobre como usar Pytorch y Label Studio
 2. Con el comando: cd DeteccionOjosPerros ingresamos a la carpeta.
 3. Creamos el entorno virtual con el comando: python -m venv .venv         
 4. Levantamos el entorno virtual con:.
+5. 
 source .venv/bin/activate     # levantar entorno en Linux/Mac.
+
 o.
+
 .venv\Scripts\activate        # levantar entorno en Windows.
-5. Instalamos las dependencias con el comando: pip install -r requirements.txt # instalar requerimientos
-6. Corremos el codigo con el comando: python dataset.py
+
+7. Instalamos las dependencias con el comando: pip install -r requirements.txt # instalar requerimientos
+8. Corremos el codigo con el comando: python dataset.py
 
 
 # 🐶 KeypointDogDataset - Detección de Ojos de Perros con Puntos Clave
