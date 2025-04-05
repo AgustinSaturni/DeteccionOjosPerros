@@ -142,6 +142,32 @@ Muestra la imagen anotada con los puntos clave usando `matplotlib`.
 
 ---
 
+
+### 📦 `ResizeGrayNormalize`
+
+Esta clase es una transformación personalizada que aplica los siguientes pasos a cada imagen del dataset:
+
+1. **Convierte a escala de grises.**
+2. **Redimensiona la imagen** a un tamaño fijo (`output_size`).
+3. **Normaliza los píxeles** dividiendo por 255 para que estén entre 0 y 1.
+4. **Redimensiona los keypoints** (puntos clave) proporcionalmente al nuevo tamaño de imagen.
+
+```python
+class ResizeGrayNormalize:
+    def __init__(self, output_size):
+        self.output_size = output_size
+
+    def __call__(self, sample):
+        # Procesamiento de imagen y ajuste de puntos clave
+        ...
+```
+
+---
+
+
+---
+
+
 ## 📁 Estructura esperada del dataset
 
 ```
