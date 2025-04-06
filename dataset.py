@@ -40,6 +40,8 @@ class KeypointDogDataset(Dataset):
         self.samples = []
         for item in self.labels_data:
             filename = item["file_upload"]
+            # Eliminás todo antes del primer guion esto es porque label-studio agrega uuid
+            filename = filename.split("-", 1)[-1]
             annotations = item["annotations"][0]["result"]
             keypoints = []
             width = annotations[0]["original_width"]
