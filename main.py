@@ -39,7 +39,7 @@ def main(mode):
         model.eval()
 
         # Ruta de imagen para predecir
-        test_img = r"D:\Usuarios\Usuario\Desktop\IA\DeteccionOjosPerros\perro11.jpg"
+        test_img = r"D:\Usuarios\Usuario\Desktop\IA\DeteccionOjosPerros\Predict_Images\perro11.jpg"
         transform = ResizeGrayNormalize(output_size=(256, 256))
         preds = predict_keypoints(test_img, model, transform, num_keypoints=num_keypoints)
         print("🔍 Coordenadas predichas:", preds)

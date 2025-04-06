@@ -26,7 +26,7 @@ class KeypointNet(nn.Module):
         return x.view(x.size(0), -1, 2)
 
 # Configuración general
-images_path = r"D:\Usuarios\Usuario\Desktop\IA\DeteccionOjosPerros\images"
+images_path = r"D:\Usuarios\Usuario\Desktop\IA\DeteccionOjosPerros\Train_Images"
 labels_path = r"D:\Usuarios\Usuario\Desktop\IA\DeteccionOjosPerros\labels.json"
 transform = ResizeGrayNormalize(output_size=(256, 256))
 

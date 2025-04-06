@@ -31,13 +31,3 @@ def predict_keypoints(image_path, model, transform, num_keypoints=2):
     plt.show()
 
     return predicted_keypoints
-
-# 🛑 Solo ejecutar si este archivo es el principal
-if __name__ == "__main__":
-    ruta_nueva_img = r"D:\Usuarios\Usuario\Desktop\IA\DeteccionOjosPerros\perro11.jpg"
-    model = KeypointNet(num_keypoints=2)
-    model.load_state_dict(torch.load("keypoint_model_best.pth"))
-    transform = ResizeGrayNormalize(output_size=(256, 256))
-
-    preds = predict_keypoints(ruta_nueva_img, model, transform, num_keypoints=2)
-    print("Coordenadas predichas:", preds)
